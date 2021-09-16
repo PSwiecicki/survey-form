@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Survey form for volontiers who want fight with covid-19">
+    <meta name="keywords" content="HTML, CSS, Survey, Form, FreeCodeCamp">
+    <meta name="author" content="Patryk Święcicki">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="bg"> </div>
+      <header>
+        <h1>Survey for volunteers</h1>
+      </header>
+      <main>
+        <p>If you would like to help doctors fight coronavirus, complete the following survey</p>
+        <form>
+          <div class="form-group">
+            <label  id="name-label" class="survey-label" for="name">Name: </label>
+            <input  id="name" class="survey-input" name="name" type="text" placeholder="Enter your name." required>
+            <p id="name-messagebox" class="input-messagebox"></p>
+          </div>
+          <div class="form-group">
+            <label  id="email-label" class="survey-label" for="email">Email: </label>
+            <input  id="email" class="survey-input" name="email" type="email"
+                placeholder="Enter your e-mail address." required>
+            <p id="email-messagebox" class="input-messagebox"></p>
+          </div>
+          <div class="form-group">
+            <label  id="number-label" class="survey-label" for="number">Phone number: </label>
+            <input  id="number" class="survey-input" name="number" type="phone" placeholder="Enter your phone number." required>
+            <p id="number-messagebox" class="input-messagebox"></p>
+          </div>
+          <fieldset class="fieldset">
+            <legend class="survey-label">Have you had contact with person infected by coronavirus?</legend>
+            <label for="yes-contact">
+              <input id="yes-contact" type="radio" name="infected-contact" value="yes">Yes
+            </label>
+            <label for="no-contact">
+              <input id="no-contact" type="radio" name="infected-contact" value="no" checked>No
+            </label>
+          </fieldset>
+          <fieldset class="fieldset" >
+            <legend class="survey-label">Have you been abroad in the last two weeks?</legend>
+            <label for="yes-abroad">
+              <input id="yes-abroad" type="radio" name="was-abroad" value="yes">Yes
+            </label>
+            <label for="no-abroad">
+              <input id="no-abroad" type="radio" name="was-abroad" value="no" checked>No
+            </label>
+          </fieldset>
+          <fieldset class="fieldset" >
+            <legend class="survey-label">Do you have any symptoms? (cough, headache, dyspnoea, fever) </legend>
+            <label for="yes-symptoms">
+              <input id="yes-symptoms" type="radio" name="have-symptoms" value="yes">Yes
+            </label>
+            <label for="no-symptoms">
+              <input id="no-symptoms" type="radio" name="have-symptoms" value="no" checked>No
+            </label>
+          </fieldset>
+          <fieldset class="fieldset" >
+            <legend class="survey-label">How would you want to help?</legend>
+            <label for="finance">
+              <input id="finance" type="checkbox" name="help-way" value="finance">Financial support.
+            </label>
+            <label for="elderly-people">
+              <input id="elderly-people" type="checkbox" name="help-way" value="elderly-people">Take care of elderly people.
+            </label>
+            <label for="hospital-support">
+              <input id="hospital-support" type="checkbox" name="help-way" value="hospital-support">Help in hospital.
+            </label>
+          </fieldset>
+          <div class="form-group">
+            <label  id="city-label" class="survey-label" for="dropdawn">Which place do you prefer?</label>
+            <input  id="city" type="text" class="survey-input" list="cities" required></input>
+            <datalist id="cities">
+              <option value="Grudziądz">
+              <option value="Jelenia Góra">
+              <option value="Wrocław">
+              <option value="Wałbrzych">
+              <option value="Kalisz">
+              <option value="Świdnica">
+              <option value="Jasło">
+            </datalist>
+            <p id="city-messagebox" class="input-messagebox"></p>
+          </div>
+          <div class="form-group">
+            <label  id="message-label"
+                class="survey-label"
+                for="message">Message: </label>
+            <textarea id="message"
+                  class="survey-input"
+                  rows="6"
+                  placeholder="If you want add something, write it here."></textarea>
+          </div>
+          <div class="form-group">
+            <button id="submit"
+                class="survey-input"
+                type="submit">SUBMIT</button>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <p>Thank you <a class="link" href="https://www.freecodecamp.org/" target="_blank" rel="nofollow noopener" >FreeCodeCamp</a> for knowledge and ideas!!</p>
+      </footer>
+  </body>
+  <script src="./scripts.js"></script>
+</html>

@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Haettenschweiler, sans-serif;
+}
+
+header {
+    padding: 50px 0 50px 0;
+}
+
+main {
+    width: 600px;
+    margin: 10px auto;
+}
+
+form {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgba(13, 43, 34, 0.7);
+    border-radius: 20px;
+}
+p {
+    text-align: center;
+    color: rgb(160, 218, 233);
+    font-size: 1.05em;
+}
+
+h1 {
+    color: rgb(160, 218, 233);
+    text-align: center;
+    font-size: 64px;
+}
+
+label, legend {
+    color: rgb(160, 218, 233);
+}
+
+input, textarea, button {
+    padding: 2px 5px;
+    border-radius: 5px;
+    border: 3px solid rgb(39, 99, 62);
+    font-size: 1.1em;
+}
+
+button {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(17, 71, 85);
+    background-color: rgb(160, 218, 233);
+}
+
+textarea {
+    padding: 5px;
+    line-height: 1.2em;
+    resize: none;
+}
+
+legend {
+    margin-left: 10px;
+}
+
+fieldset {
+    padding: 5px;
+}
+input[type="checkbox"], input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    border: 3px solid rgb(65, 158, 101);
+}
+
+button:hover {
+    outline: none;
+    border: 3px solid rgb(65, 158, 101);
+    color: rgb(17, 71, 85);
+    background-color: rgb(207, 236, 243);
+}
+
+.bg {
+    content: '';
+    position:fixed;
+    background-image: linear-gradient(rgba(13, 43, 34, 0.7), rgba(13, 43, 34, 0.7)),
+                      url(https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80);
+    z-index: -1 ;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-group, fieldset {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin:15px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(160, 218, 233);
+}
+
+p.input-messagebox {
+    font-size: 0.80rem;
+    text-align: left;
+    display: none;
+}
